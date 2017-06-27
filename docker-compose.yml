@@ -15,8 +15,6 @@ services:
       - "9000:9000"
     volumes_from:
       - app
-    volumes:
-      - ./php/php.ini:/usr/local/etc/php/php.ini
     depends_on:
       - db
   app:
