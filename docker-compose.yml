@@ -23,8 +23,6 @@ services:
     build: ./app
     volumes:
       - /usr/local/nginx/html
-      - ./www-data/wp-config.php:/usr/local/nginx/html/wp-config.php
-      - ./www-data/icslab:/usr/local/nginx/html/wp-content/themes/icslab
   db:
     image: mysql:5.7.18
     env_file: .env
